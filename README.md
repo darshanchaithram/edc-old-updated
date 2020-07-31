@@ -6,7 +6,8 @@ The real website is at [edc website](https://edc.nssce.ac.in)
 ## Things to take care of during development
 ### Mongodb uri string is in the app.js file, install mongodb in your machine and add data from the json files given in the public/assets/backupdb folder. Database names can be got from the schema sets in db folder.
 ### Dont mess with the apply date and pass review buttons if you are giving a vaild email and password in the routes/dashboard/creds.json file as it will hopefully sent a mail to the email from the data(Dont do this please ;))
-### Most important of all, DO NOT UPDATE THE DEPENDENCIES OR NODE unless you really know what mess are you getting into, Codes will require new syntax and also if you somehow do that unknowingly , dont push the changes, instead remove your repository-clone again-start new. 
+### Most important of all, DO NOT UPDATE THE DEPENDENCIES OR NODE unless you really know what mess are you getting into, Codes will require new syntax and also if you somehow do that unknowingly , dont push the changes, instead remove your repository-clone again-start new.
+### Users json is given where the passwords are Admin for admin@abcd.com and panel123 for panel@abcd.com
 ## Steps for Running the project
 ### Clone the project
 ### Navigate to the cloned location

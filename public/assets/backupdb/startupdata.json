@@ -1,0 +1,756 @@
+[{
+  "_id": "13",
+  "name": "VORAUS",
+  "type": "SOFTWARE",
+  "regno": "",
+  "founderscount": "1",
+  "founders": [
+    {
+      "name": "NAFIH C",
+      "position": "CEO"
+    }
+  ],
+  "description": "",
+  "additional": "",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "28",
+  "name": "PHACSIN",
+  "type": "PRODUCT DEVOLOPEMENT",
+  "regno": "",
+  "founderscount": "3",
+  "founders": [
+    {
+      "name": "HARIKRISHNAN R",
+      "position": "CEO"
+    },
+    {
+      "name": "JOSHIN V J",
+      "position": ""
+    },
+    {
+      "name": "SACHIN GIRIDHAR",
+      "position": ""
+    }
+  ],
+  "description": "Phacsin Tech Private Limited is a product startup. Previously launched 4 products while in college which includes KEAM Sahayi, Food Chase, Proofdworx and Educonn.",
+  "additional": "Currently working on 2 new products. Start A Cloud and Dashcart.",
+  "recworkscount": "1",
+  "recentwork": [
+    {
+      "detail": "Dashcart",
+      "type": "Website Shop",
+      "link": "https://dashcart.in/"
+    }
+  ]
+},{
+  "_id": "15",
+  "name": "ARC STUDIOS",
+  "type": "MEDIA",
+  "regno": "",
+  "founderscount": "1",
+  "founders": [
+    {
+      "name": "ASWIN RAM",
+      "position": "CEO"
+    }
+  ],
+  "description": "",
+  "additional": "",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "27",
+  "name": "TOYSMITHS",
+  "type": "Customised Robots and Industrial Automation",
+  "regno": "",
+  "founderscount": "4",
+  "founders": [
+    {
+      "name": "FAYAD S",
+      "position": "CEO"
+    },
+    {
+      "name": "GOKULNATH CS",
+      "position": ""
+    },
+    {
+      "name": "DEVIKA TK",
+      "position": ""
+    },
+    {
+      "name": "GAUTAM",
+      "position": ""
+    }
+  ],
+  "description": "Present Project: CNC EDM Development for a Company",
+  "additional": "Future Project: Humanoid Robot",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "30",
+  "name": "TRICODIA",
+  "type": "SOFTWARE CONSULTING",
+  "regno": "",
+  "founderscount": "3",
+  "founders": [
+    {
+      "name": "Sachin Dev ",
+      "position": "CEO"
+    },
+    {
+      "name": "Ajesh Krishnan",
+      "position": "CTO"
+    },
+    {
+      "name": "Clince Joshy",
+      "position": "COO"
+    }
+  ],
+  "description": "Software Consulting Start-up incubated at Silicon Valley based TBI - Startup Village, Kochi. Primarly focused on Web, Android and iOS Application Development, also have explored the areas of NLP and Machine Learning.",
+  "additional": "",
+  "recworkscount": "2",
+  "recentwork": [
+    {
+      "detail": "NSSCE Official App",
+      "type": "Android",
+      "link": "https://play.google.com/store/apps/details?id=com.tricodia.NSSCE"
+    },
+    {
+      "detail": "Mez - College Hostel Billing System",
+      "type": "Web App",
+      "link": "https://tricodia.com/mez"
+    }
+  ]
+},{
+  "_id": "33",
+  "name": "NIVATA INFOSEC",
+  "type": "CYBERSECURITY",
+  "regno": "",
+  "founderscount": "3",
+  "founders": [
+    {
+      "name": "SREEKANTH SASI",
+      "position": "CEO"
+    },
+    {
+      "name": "ASHISH SHAJI THOMAS",
+      "position": "CTO"
+    },
+    {
+      "name": "SANJAY K S",
+      "position": "CMO"
+    }
+  ],
+  "description": "Nivata infosec is a cybersecurity startup founded by an inspired and enthusiastic team of students in NSS COLLEGE of ENGINEERING, PALAKKAD. First project is an IOT Intrusion Detection Device empowered with latest machine learning techniques to detect malicious activity. We also provide security services including penetration testing.",
+  "additional": "",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "29",
+  "name": "HEXAREN",
+  "type": "BOOK PUBLISHERS",
+  "regno": "",
+  "founderscount": "6",
+  "founders": [
+    {
+      "name": "GOVIND",
+      "position": "CEO"
+    },
+    {
+      "name": "ATHUL HARIDAS",
+      "position": "CTO"
+    },
+    {
+      "name": "ARUN KR",
+      "position": "CTO"
+    },
+    {
+      "name": "DEVDAS V",
+      "position": "CMO"
+    },
+    {
+      "name": "ARJUN CS",
+      "position": "CFO"
+    },
+    {
+      "name": "NASEEF MUHAMMED",
+      "position": "COO"
+    }
+  ],
+  "description": "About us : The student startup company emphasizing more on the interests of engineering students studying around the globe. Our start-up is a joint venture of 6 students studying in the 4th year of undergraduate study in the trade of Instrumentation and control engineering in the district of Kerala, India.Present Project: Published the 2nd edition of KTU XAMSCANNER , a book meant exclusively for first year engineering students.",
+  "additional": "Future Project: 3rd edition of XAMSCANNER XAMSCANNER 1st edition for 2nd and 3rd Year students.",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "26",
+  "name": "INSI8",
+  "type": "SOFTWARE",
+  "regno": "",
+  "founderscount": "3",
+  "founders": [
+    {
+      "name": "SOORAJ R",
+      "position": "CEO"
+    },
+    {
+      "name": "HARIKRISHNAN P",
+      "position": ""
+    },
+    {
+      "name": "ABHISHEK S",
+      "position": ""
+    }
+  ],
+  "description": "",
+  "additional": "",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "31",
+  "name": "LENTARK",
+  "type": "HARDWARE TECH",
+  "regno": "",
+  "founderscount": "1",
+  "founders": [
+    {
+      "name": "MOHAMED SAHEER MARAKATHEL",
+      "position": "CEO"
+    }
+  ],
+  "description": "Electronic hardware based start-up incubated and supported by Kerala Startup Mission (KSUM), Achieved 3.67 lakhs as Idea Grant from KSUM. Prioritize on Electronic Hardwaring, Holds 5 Patents (National and International).",
+  "additional": "Currently Working on TECH-PROJECTS:e-STICK,e-SEC,e-BOT,e-FM,e-GAS,e-CAP.",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "14",
+  "name": "BE CRAY",
+  "type": "SOFTWARE",
+  "regno": "",
+  "founderscount": "4",
+  "founders": [
+    {
+      "name": "JITHU KIRAN",
+      "position": "CEO"
+    },
+    {
+      "name": "Muhammed Yaseen M M",
+      "position": ""
+    },
+    {
+      "name": "Sreeharsh Manas M M",
+      "position": ""
+    },
+    {
+      "name": "Vivek A V",
+      "position": ""
+    }
+  ],
+  "description": "",
+  "additional": "",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "1",
+  "name": "BODHWI TECHNOLOGIES",
+  "type": "SOFTWARE",
+  "regno": "",
+  "founderscount": "1",
+  "founders": [
+    {
+      "name": "HANZAL SALIM",
+      "position": "CEO"
+    }
+  ],
+  "description": "",
+  "additional": "",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "20",
+  "name": "UNI5IVE",
+  "type": "Service sector",
+  "regno": "",
+  "founderscount": "5",
+  "founders": [
+    {
+      "name": "Akshay VS",
+      "position": "CEO"
+    },
+    {
+      "name": "Nithin Raj",
+      "position": ""
+    },
+    {
+      "name": "Akshay Babu",
+      "position": ""
+    },
+    {
+      "name": "Sharun ND",
+      "position": ""
+    },
+    {
+      "name": "Ajay Aravind",
+      "position": ""
+    }
+  ],
+  "description": "Present Project: Distribution of Hostel Kit in Different engineering colleges",
+  "additional": "Future Projects: Portable Water Purifier, Drying Swing System, Solar Powered Clothes",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "3",
+  "name": "AVANTOURA",
+  "type": "TOURISM",
+  "regno": "",
+  "founderscount": "5",
+  "founders": [
+    {
+      "name": "SHIYAS V P",
+      "position": "CEO"
+    },
+    {
+      "name": "HANZAL SALIM",
+      "position": "Partner"
+    },
+    {
+      "name": "NOUFAL RAHMAN",
+      "position": "Partner"
+    },
+    {
+      "name": "SHUHAIB PALLIPPURAM",
+      "position": "Partner"
+    },
+    {
+      "name": "NASEEB K P",
+      "position": "Partner"
+    }
+  ],
+  "description": "An experience-oriented travel companion, Avantoura shall redefine how you conceive venturing.",
+  "additional": "Aren't you tired of the overcrowded viewpoints, Pricey hotels and their smiling staffs? Don't you want to run away with your partner in crime, your gang of friends, to lands never heard of?With Places and Plans that even Google can't list, Your perfect getaway is a click away with Avantoura!",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "5",
+  "name": "INFINITY",
+  "type": "SOFTWARE",
+  "regno": "",
+  "founderscount": "5",
+  "founders": [
+    {
+      "name": "HANZAL SALIM",
+      "position": "CEO"
+    },
+    {
+      "name": "ASHWIN JAYAKUMAR",
+      "position": ""
+    },
+    {
+      "name": "BHARADHWAJ",
+      "position": ""
+    },
+    {
+      "name": "SHAFEEQ KUNNAKADAN",
+      "position": ""
+    },
+    {
+      "name": "SREYA KANNAN",
+      "position": ""
+    }
+  ],
+  "description": "",
+  "additional": "",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "12",
+  "name": "REENBOOG",
+  "type": "MEDIA",
+  "regno": "",
+  "founderscount": "1",
+  "founders": [
+    {
+      "name": "FEBIN JISHAL",
+      "position": "CEO"
+    }
+  ],
+  "description": "Media creation and creative video editing for events. ",
+  "additional": "Youtube channel is present named Reenboog",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "16",
+  "name": "CAFE BREAK",
+  "type": "CAFFETERIA",
+  "regno": "",
+  "founderscount": "1",
+  "founders": [
+    {
+      "name": "ASHOKAN",
+      "position": "CEO"
+    }
+  ],
+  "description": "",
+  "additional": "",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "11",
+  "name": "SLATE AND PENCIL",
+  "type": "SOFTWARE",
+  "regno": "",
+  "founderscount": "1",
+  "founders": [
+    {
+      "name": "GOPIKRISHNAN V NAIR",
+      "position": "CEO"
+    }
+  ],
+  "description": "",
+  "additional": "",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "17",
+  "name": "RUSTIC TECHNOLOGIES",
+  "type": "IOT",
+  "regno": "",
+  "founderscount": "1",
+  "founders": [
+    {
+      "name": "RAGIL",
+      "position": "CEO"
+    }
+  ],
+  "description": "",
+  "additional": "",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "9",
+  "name": "FEDYMS",
+  "type": "SOFTWARE",
+  "regno": "",
+  "founderscount": "1",
+  "founders": [
+    {
+      "name": "ARAVIND SAI",
+      "position": "CEO"
+    }
+  ],
+  "description": "",
+  "additional": "",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "19",
+  "name": "TECHACER TECHNOLOGIES",
+  "type": "ELECTRONICS",
+  "regno": "",
+  "founderscount": "1",
+  "founders": [
+    {
+      "name": "AKHIL GOPAL",
+      "position": "CEO"
+    }
+  ],
+  "description": "",
+  "additional": "",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "7",
+  "name": "MAVERICKS",
+  "type": "MECHANICAL",
+  "regno": "",
+  "founderscount": "1",
+  "founders": [
+    {
+      "name": "JITHIN BABU",
+      "position": "CEO"
+    }
+  ],
+  "description": "",
+  "additional": "",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "8",
+  "name": "INFINITY INFOSEC",
+  "type": "SOFTWARE",
+  "regno": "",
+  "founderscount": "1",
+  "founders": [
+    {
+      "name": "SURAJ SURESH",
+      "position": "CEO"
+    }
+  ],
+  "description": "",
+  "additional": "",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "23",
+  "name": "OUI",
+  "type": "Consumer Electronics ,Information, SAAS",
+  "regno": "",
+  "founderscount": "3",
+  "founders": [
+    {
+      "name": "Suraj R",
+      "position": "CEO"
+    },
+    {
+      "name": "Abhishek S",
+      "position": ""
+    },
+    {
+      "name": "Harikrishnan P",
+      "position": ""
+    }
+  ],
+  "description": "Present Project: insi8 - A one stop solution that helps users find the ideal electronic device, based on the activities they perform with it. The insights are based on opinions of users of that device across the internet using Machine learning and Natural Language processing, to provide an aspect - based(performance, camera etc) verdict allowing users to quickly and reliably decide whether to purchase a device or not. Our main project aims to implement a major portion of the technology powering this.",
+  "additional": "Future Project: Debunker - An app that prevents users from falling prey to fake news and websites by warning and generating counter messages to tackle the issue of misinformation in social media. Won the second prize in AngelHack Global hackathon series : Kochi, for presenting the prototype.",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "32",
+  "name": "KENLEAD",
+  "type": "BOOK PUBLISHERS",
+  "regno": "",
+  "founderscount": "4",
+  "founders": [
+    {
+      "name": "Sonu Krishnan",
+      "position": "CEO"
+    },
+    {
+      "name": "Godfred M Giv",
+      "position": "CFO"
+    },
+    {
+      "name": "Ashin Prakash",
+      "position": "COO"
+    },
+    {
+      "name": "Solomon Staby",
+      "position": "CTO"
+    }
+  ],
+  "description": "KENLEAD aims to provide the best service and products which is sure to make our customers contended. We identify the needs of the society and neighbourhood and try to provide a simple but effective solution.",
+  "additional": "PRODUCTS :KTU REWIND.This is a product provided to the students who are pursuing their under graduation under APJ Abdul Kalam Technological University, Kerala. We saw many students faced the problem of not having a easily revisable material with them to prepare before the exam and when it comes to making lecture notes it's not everyone's cup of tea. So our aim is to provide the students with materials which will contain the entire syllabus in a capsule form.",
+  "recworkscount": "1",
+  "recentwork": [
+    {
+      "detail": "KTU REWIND",
+      "type": "STUDY MATERIAL",
+      "link": ""
+    }
+  ]
+},{
+  "_id": "10",
+  "name": "QUICKSPLIT",
+  "type": "SOFTWARE",
+  "regno": "",
+  "founderscount": "5",
+  "founders": [
+    {
+      "name": "ARAVIND SAI",
+      "position": "CEO"
+    },
+    {
+      "name": "Anil Kumar",
+      "position": ""
+    },
+    {
+      "name": "Dhrisya Venugopal",
+      "position": ""
+    },
+    {
+      "name": "Divya Vannery",
+      "position": ""
+    },
+    {
+      "name": "Gokul Nath",
+      "position": ""
+    }
+  ],
+  "description": "",
+  "additional": "",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "21",
+  "name": "ALILA CREATIONS",
+  "type": "CRAFT",
+  "regno": "",
+  "founderscount": "1",
+  "founders": [
+    {
+      "name": "VIJAY V",
+      "position": "CEO"
+    }
+  ],
+  "description": "",
+  "additional": "",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "2",
+  "name": "MATCH BOX MEDIA",
+  "type": "Online Promotion and Media",
+  "regno": "EDC0004205",
+  "founderscount": "4",
+  "founders": [
+    {
+      "name": "ANIRUDH",
+      "position": "CEO"
+    },
+    {
+      "name": "Amith Krishna",
+      "position": ""
+    },
+    {
+      "name": "Vishnu Prakash",
+      "position": ""
+    },
+    {
+      "name": "Nived K ",
+      "position": ""
+    }
+  ],
+  "description": "Project: Online movie and short film  promotion",
+  "additional": "Past Work: Promotion of films like Godha, Aby, TGF etc.",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "25",
+  "name": "ZERONE",
+  "type": "SOFTWARE",
+  "regno": "",
+  "founderscount": "1",
+  "founders": [
+    {
+      "name": "SACHIN DEV",
+      "position": "CEO"
+    }
+  ],
+  "description": "",
+  "additional": "",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "24",
+  "name": "KARELA",
+  "type": "Social , IT",
+  "regno": "",
+  "founderscount": "5",
+  "founders": [
+    {
+      "name": "ATHUL R",
+      "position": "CEO"
+    },
+    {
+      "name": "FEBIN JISHAL",
+      "position": ""
+    },
+    {
+      "name": "SUHAIL OK",
+      "position": ""
+    },
+    {
+      "name": "ABEL KURUVILLA",
+      "position": ""
+    },
+    {
+      "name": "ALFRED SKARIA",
+      "position": ""
+    }
+  ],
+  "description": "Present Project: Skhedule.me- Schedules your day's events. Pursuing a social start-up 'Inscielabs' (hands free training for school students).",
+  "additional": "Future Idea: Advancement in Industrial design",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "6",
+  "name": "AEM",
+  "type": "ENTREPRENEURSHIP TRAINING",
+  "regno": "",
+  "founderscount": "1",
+  "founders": [
+    {
+      "name": "JITHIN BABU",
+      "position": "CEO"
+    }
+  ],
+  "description": "AEM is Academy of Entrepreneurship and Management which is formed for developing entrepreneurship among students by giving them proper training.",
+  "additional": "",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "18",
+  "name": "ROOTLABS",
+  "type": "MEDIA",
+  "regno": "",
+  "founderscount": "1",
+  "founders": [
+    {
+      "name": "FRANCIS C",
+      "position": "CEO"
+    }
+  ],
+  "description": "",
+  "additional": "",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "4",
+  "name": "PAPER CROW",
+  "type": "CRAFT",
+  "regno": "",
+  "founderscount": "1",
+  "founders": [
+    {
+      "name": "HANZAL SALIM",
+      "position": "CEO"
+    }
+  ],
+  "description": "",
+  "additional": "",
+  "recworkscount": "0",
+  "recentwork": []
+},{
+  "_id": "22",
+  "name": "OFFCUBE TECHNOLOGIES",
+  "type": "Tourism, Technology, SAAS",
+  "regno": "",
+  "founderscount": "5",
+  "founders": [
+    {
+      "name": "JOYAL JOSE P D",
+      "position": "CEO"
+    },
+    {
+      "name": "SRIKANT VIJAY",
+      "position": ""
+    },
+    {
+      "name": "ATUL RAMESH VERMA",
+      "position": ""
+    },
+    {
+      "name": "ASHIK THOMSON",
+      "position": ""
+    },
+    {
+      "name": "JAISON JOSE",
+      "position": ""
+    }
+  ],
+  "description": "Problem Statement: Getting at an unknown place is always a problem and we are trying to solve this with the automation of travel guides that are around via chatting as well as calling along with a chat bot for the booking services as well.",
+  "additional": "Present Project: Tripzana- A chat based travel assistant along with railway food service.Future Project: Expanding the railway food service in the whole state, Machine Learning",
+  "recworkscount": "0",
+  "recentwork": []
+}]

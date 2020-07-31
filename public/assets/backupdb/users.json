@@ -1,0 +1,17 @@
+[{
+    "_id": "panel@abcd.com",
+    "date_created": 1593347930553,
+    "uname": "PANEL",
+    "password": "$2a$10$Okfnzn1/DcbUT2T9P8Z91OjFqqyn0b1fXz8CdGoaQjzt.8OfLla3K",
+    "acctype": "panel",
+    "newuser": false,
+    "__v": 0
+}, {
+    "_id": "admin@abcd.com",
+    "date_created": 1593347930553,
+    "uname": "ADMIN",
+    "password": "$2a$10$C/j0lA2ONdnJz3UT2Km6duWcnUS9sd2NOcFVHqnrQxCEy18g0VSC2",
+    "acctype": "admin",
+    "newuser": false,
+    "__v": 0
+}]

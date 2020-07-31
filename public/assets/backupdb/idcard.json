@@ -1,27 +1,27 @@
 [{
-  "_id": "EDC16012",
-  "name": "Sreerag",
-  "department": "Mechanical Engineering",
-  "position": "Activity Coordinator",
-  "phone": "+91 9048 212 429",
-  "email": "sreerag939@gmail.com",
-  "linkedin": "#"
-},{
-  "_id": "EDC16005",
-  "name": "Rakesh Kumar T",
+  "_id": "EDC16001",
+  "name": "Akshay V J",
   "department": "Instrumentation and Control",
-  "position": "Cheif Creative Officer",
-  "phone": "+91 8129 852 760",
-  "email": "rakeshkumart2760@gmail.com",
-  "linkedin": "https://www.linkedin.com/in/rakeshkumart/"
+  "position": "Cheif Executive Officer",
+  "phone": "+91 8606 365 005",
+  "email": "akshay.vilayiljanakan@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/akshay-v-j-853a90176/"
 },{
-  "_id": "EDC16008",
-  "name": "Abhinand G K",
+  "_id": "EDC16002",
+  "name": "Amarnath K",
   "department": "Instrumentation and Control",
-  "position": "Student Coordinator",
-  "phone": "+91 8086 287 473",
-  "email": "agkmaliyakkal@gmail.com",
-  "linkedin": "https://www.linkedin.com/in/abhinand-g-k-b0a683142/"
+  "position": "Cheif Financial Officer",
+  "phone": "+91 8943 065 667",
+  "email": "amarnathk153@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/amarnath-k-814268184/"
+},{
+  "_id": "EDC16003",
+  "name": "Sreekanth Sasi",
+  "department": "Electronics and Communication",
+  "position": "Cheif Technical Officer",
+  "phone": "+91 8281 951 587",
+  "email": "sreekanthsasi007@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/sreekanth-sasi-b7836b88/"
 },{
   "_id": "EDC16004",
   "name": "Anjana C",
@@ -30,6 +30,14 @@
   "phone": "+91 9496 537 270",
   "email": "anjucholakattu@gmail.com",
   "linkedin": "https://www.linkedin.com/in/anjana-cholakattu-33613617b/"
+},{
+  "_id": "EDC16005",
+  "name": "Rakesh Kumar T",
+  "department": "Instrumentation and Control",
+  "position": "Cheif Creative Officer",
+  "phone": "+91 8129 852 760",
+  "email": "rakeshkumart2760@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/rakeshkumart/"
 },{
   "_id": "EDC16006",
   "name": "Greeshma K R",
@@ -47,6 +55,14 @@
   "email": "azifahmed1997@gmail.com",
   "linkedin": "https://www.linkedin.com/in/asif-ahmed-645267184/"
 },{
+  "_id": "EDC16008",
+  "name": "Abhinand G K",
+  "department": "Instrumentation and Control",
+  "position": "Student Coordinator",
+  "phone": "+91 8086 287 473",
+  "email": "agkmaliyakkal@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/abhinand-g-k-b0a683142/"
+},{
   "_id": "EDC16009",
   "name": "Rahul S",
   "department": "Instrumentation and Control",
@@ -55,29 +71,13 @@
   "email": "rahulgokul2016@gmail.com",
   "linkedin": "https://www.linkedin.com/in/rahul-s-27a35615b/"
 },{
-  "_id": "EDC16003",
-  "name": "Sreekanth Sasi",
-  "department": "Electronics and Communication",
-  "position": "Cheif Technical Officer",
-  "phone": "+91 8281 951 587",
-  "email": "sreekanthsasi007@gmail.com",
-  "linkedin": "https://www.linkedin.com/in/sreekanth-sasi-b7836b88/"
-},{
-  "_id": "EDC16002",
-  "name": "Amarnath K",
+  "_id": "EDC16010",
+  "name": "Gayathri A V",
   "department": "Instrumentation and Control",
-  "position": "Cheif Financial Officer",
-  "phone": "+91 8943 065 667",
-  "email": "amarnathk153@gmail.com",
-  "linkedin": "https://www.linkedin.com/in/amarnath-k-814268184/"
-},{
-  "_id": "EDC16001",
-  "name": "Akshay V J",
-  "department": "Instrumentation and Control",
-  "position": "Cheif Executive Officer",
-  "phone": "+91 8606 365 005",
-  "email": "akshay.vilayiljanakan@gmail.com",
-  "linkedin": "https://www.linkedin.com/in/akshay-v-j-853a90176/"
+  "position": "Student Coordinator",
+  "phone": "+91 8943 631 936",
+  "email": "gayathriav96@gmail.com",
+  "linkedin": "#"
 },{
   "_id": "EDC16011",
   "name": "Sidharth Narayan",
@@ -86,6 +86,14 @@
   "phone": "+91 8281 560 156",
   "email": "sidharth2626@gmail.com",
   "linkedin": "https://www.linkedin.com/in/sidharth-narayan-326a98141/"
+},{
+  "_id": "EDC16012",
+  "name": "Sreerag",
+  "department": "Mechanical Engineering",
+  "position": "Activity Coordinator",
+  "phone": "+91 9048 212 429",
+  "email": "sreerag939@gmail.com",
+  "linkedin": "#"
 },{
   "_id": "EDC16013",
   "name": "Mohamed Saheer Marakathel",
@@ -102,14 +110,6 @@
   "phone": "+91 9400 544 420",
   "email": "anandktr206@gmail.com",
   "linkedin": "https://www.linkedin.com/in/anand-a-s-480273184/"
-},{
-  "_id": "EDC16010",
-  "name": "Gayathri A V",
-  "department": "Instrumentation and Control",
-  "position": "Student Coordinator",
-  "phone": "+91 8943 631 936",
-  "email": "gayathriav96@gmail.com",
-  "linkedin": "#"
 },{
   "_id": "EDC16015",
   "name": "Akhil Raj P",
