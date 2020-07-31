@@ -3,11 +3,15 @@
 The real website is at [edc website](https://edc.nssce.ac.in)
 ### Read available comments in the page carefully while development
 *Many dependencies have been installed nodemon,multer(file upload),nodemailer,email-templates being some important ones. The app itself has many routes and also has an authenticated login system with a database access. The template engine is Express Handlebars many conditional statements used inside hbs template(which could've done in the backend itself but it created page duplication for different kinds of users), that involves hiding(not really,but not showing even in developer browser) of many parts of the page.*
+## Things to take care of during development
+### Mongodb uri string is in the app.js file, install mongodb in your machine and add data from the json files given in the public/assets/backupdb folder. Database names can be got from the schema sets in db folder.
+### Dont mess with the apply date and pass review buttons if you are giving a vaild email and password in the routes/dashboard/creds.json file as it will hopefully sent a mail to the email from the data(Dont do this please ;))
+### Most important of all, DO NOT UPDATE THE DEPENDENCIES OR NODE unless you really know what mess are you getting into, Codes will require new syntax and also if you somehow do that unknowingly , dont push the changes, instead remove your repository-clone again-start new. 
 ## Steps for Running the project
 ### Clone the project
 ### Navigate to the cloned location
 ```
-cd Nodejs/
+cd edcnssce/
 npm install
 npm start
 ```
