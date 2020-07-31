@@ -1,0 +1,235 @@
+<html>
+
+<head>
+<title>Details</title>
+<link rel="stylesheet" href="/assets/css/moredetail.css">
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+<!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="shortcut icon" href="/assets/dashboard/media/favicons/favicon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/assets/dashboard/media/favicons/favicon-192x192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/dashboard/media/favicons/apple-touch-icon-180x180.png">
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+        <!-- Page JS Plugins CSS -->
+        <link rel="stylesheet" href="/assets/dashboard/js/plugins/datatables/dataTables.bootstrap4.css">
+        <link rel="stylesheet" href="/assets/dashboard/js/plugins/datatables/buttons-bs4/buttons.bootstrap4.min.css">
+        <link rel="stylesheet" href="/assets/dashboard/js/plugins/magnific-popup/magnific-popup.css">
+
+        <!-- Fonts and OneUI framework -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+        <link rel="stylesheet" id="css-main" href="/assets/dashboard/css/oneui.min.css">
+</head>
+<style>
+  @media print {
+  body * {
+    visibility: hidden;
+  }
+  #section-to-print, #section-to-print * {
+    visibility: visible;
+    }
+  #section-to-print {
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+  }
+  .printheader 
+  {
+  background-color: #ffffff;
+  padding: 1px;
+  text-align: Left;
+  width:100%;
+  margin: 0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #263238;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom: 2px solid #848484;
+
+  }
+  h4{
+    padding-left:10px ;
+    margin-top: 0;
+  }
+  h2{
+    padding-left:10px ;
+    margin-bottom: 0;
+  }
+  table 
+  { 
+    width: 100%; 
+    align-content: center;
+    border-radius: 0px;  
+    margin-top: 0!important;
+    /* border: 1px solid #848484; */
+    background-color: #ffffff;
+    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); */
+  }
+  /* Zebra striping */
+  tr:nth-of-type(odd) 
+  { 
+    background: #ffffff; 
+
+  }
+  th 
+  { 
+    background: #ffffff;
+    width:35%; 
+    color: #263238;
+    font-weight: normal; 
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #848484;
+
+    
+  }
+  td, th 
+  { 
+    padding: 3px; 
+    font-size: 0.9em;
+    font-weight: 200;
+    text-align: left;
+    padding: 10px;
+    text-align: left; 
+  }
+  td{
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+    border: 1px solid #848484;
+    color: #263238;
+  }
+  body
+  {
+    background:#ffffff;
+  }
+}
+
+</style>
+<body>
+<div id="page-container" class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed">
+  
+  {{> dashnav one="active"}}
+  <main id="main-container">
+    {{#each items}}
+    <!-- Hero -->
+    <div class="bg-body-light">
+        <div class="content content-full">
+            <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
+                <h1 class="flex-sm-fill h3 my-2">
+                    Registered Students Data
+                </h1>
+                <nav class="flex-sm-00-auto ml-sm-2" aria-label="breadcrumb">
+                    <ol class="breadcrumb breadcrumb-alt">
+                        <li class="breadcrumb-item">Dashboard</li>
+                        <li class="breadcrumb-item" aria-current="page">
+                            <a class="link-fx" href="/dashboard">Registrations</a>
+                        </li>
+                        <li class="breadcrumb-item" aria-current="page">
+                            <a class="link-fx" href="">{{this._id}}</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- END Hero -->
+    <div>
+      <div>
+      <a href="/dashboard"><button class="btn btn-outline-dark mr-1 mb-3"><i class="fa fa-arrow-left"></i> go back</button></a>
+<div id="section-to-print">
+  <header class="printheader">
+    <h2>iEDC NSSCE </h2>
+    <h4>Startup Application Form</h4>
+  </header>
+  <table align="center">
+        <tr><th>Startup ID :</th><td>{{this._id}}</td></tr>
+        <tr><th>Founder Name :</th><td>{{this.firstname}} {{this.lastname}}</td></tr>
+        <tr><th>Semester :</th><td>{{this.semester}}</td></tr>
+        <tr><th>Branch :</th><td> {{this.branch}}</td></tr>
+        <tr><th>Email :</th><td>{{this.Email}}</td></tr>
+        <tr><th>Mobile :</th><td> {{this.mobile}}</td></tr>
+        <tr><th>Name of Co-Founder 1 :</th><td> {{this.cf1name}} {{this.cf1lname}}</td></tr>
+        <tr><th>Semester :</th><td>{{this.cf1sem}}</td></tr>
+        <tr><th>Branch :</th><td> {{this.cf1branch}}</td></tr>
+        <tr><th>Email :</th><td> {{this.Email1}}</td></tr>
+        <tr><th>Mobile :</th><td> {{this.mobile1}}</td></tr>
+        <tr><th>Is Co-Founder NSSIAN :</th><td> {{this.NSSIAN1}}</td></tr>
+        {{#if cf2name}}
+          <tr><th>Name of Co-Founder 2 :</th><td>{{this.cf2name}} {{this.cf2lname}}</td></tr>
+          <tr><th>Semester :</th><td> {{this.cf2sem}}</td></tr>
+          <tr><th>Branch :</th><td> {{this.cf2branch}}</td></tr>
+          <tr><th>Email :</th><td> {{this.Email2}}</td></tr>
+          <tr><th>Mobile :</th><td> {{this.mobile2}}</td></tr>
+          <tr><th>Is Co-Founder NSSIAN :</th><td> {{this.NSSIAN2}}</td></tr>
+          {{#if cf3name}}
+            <tr><th>Name of Co-Founder 3 :</th><td>{{this.cf3name}} {{this.cf3lname}}</td></tr>
+            <tr><th>Semester :</th><td> {{this.cf3sem}}</td></tr>
+            <tr><th>Branch :</th><td> {{this.cf3branch}}</td></tr>
+            <tr><th>Email :</th><td> {{this.Email3}}</td></tr>
+            <tr><th>Mobile :</th><td> {{this.mobile3}}</td></tr>
+            <tr><th>Is Co-Founder NSSIAN :</th><td> {{this.NSSIAN3}}</td></tr>
+            {{#if cf4name}}
+              <tr><th>Name of Co-Founder 4 :</th><td>{{this.cf4name}} {{this.cf4lname}}</td></tr>
+              <tr><th>Semester :</th><td> {{this.cf4sem}}</td></tr>
+              <tr><th>Branch :</th><td> {{this.cf4branch}}</td></tr>
+              <tr><th>Email :</th><td> {{this.Email4}}</td></tr>
+              <tr><th>Mobile :</th><td> {{this.mobile4}}</td></tr>
+              <tr><th>Is Co-Founder NSSIAN :</th><td> {{this.NSSIAN4}}</td></tr>
+            {{/if}}
+             {{#if cf5name}}
+              <tr><th>Name of Co-Founder 5 :</th><td>{{this.cf5name}} {{this.cf5lname}}</td></tr>
+              <tr><th>Semester :</th><td> {{this.cf5sem}}</td></tr>
+              <tr><th>Branch :</th><td> {{this.cf5branch}}</td></tr>
+              <tr><th>Email :</th><td> {{this.Email5}}</td></tr>
+              <tr><th>Mobile :</th><td> {{this.mobile5}}</td></tr>
+              <tr><th>Is Co-Founder NSSIAN :</th><td> {{this.NSSIAN5}}</td></tr>
+            {{/if}}
+          {{/if}}
+        {{/if}}
+        
+        <tr><th>Company Name :</th><td> {{this.company}}</td></tr>
+        <tr><th>Website :</th><td> {{this.website}}</td></tr>
+        <tr><th>Employee Details :</th><td> {{this.employee}}</td></tr>
+        <tr><th>Idea Description :</th><td> {{this.desc1}}</td></tr>
+        <tr><th>People or Companies pay for the product :</th><td> {{this.whopay}}</td></tr>
+        <tr><th>Problem Identification/Customer pain :</th><td> {{this.custpain}}</td></tr>
+        <tr><th>Key Competitors/Existing solutions :</th><td> {{this.Competitors}}</td></tr>
+        <tr><th>Unique Value Proposition :</th><td> {{this.UVP}}</td></tr>
+        <tr><th>Your Solution :</th><td> {{this.solution}}</td></tr>
+        <tr><th>Is there any Intellectual property :</th><td> {{this.copyright}}</td></tr>
+        <tr><th>Potential Number of customers interested in purchasing your Product :</th><td> {{this.customers}}</td></tr>
+        <tr><th>Marketing strategy :</th><td> {{this.marketing}}</td></tr>
+        <tr><th>Revenue Streams :</th><td> {{this.makemoney}}</td></tr>
+        <tr><th>Estimate your Business Startup Cost :</th><td> {{this.investment}}</td></tr>
+        <tr><th>How will you reach your financial goals for startup ?</th><td> {{this.Goals}}</td></tr>
+        <tr><th>Department Mentor :</th><td> {{this.mentor}}</td></tr>
+        {{#if presentdateyes}}
+        <tr><th>Appointment Date with the iEDC executive panel :</th><td style="color: green;font-family:monospace;"> {{this.presentdate}}</td></tr>
+        {{/if}}
+        {{#if registeredyes}}
+        <tr><th>Idea approved by iEDC NSSCE :</th><td style="color: green;font-family:monospace;"> Yes on {{this.registereddate}}</td></tr>
+        {{/if}}
+
+        {{/each}}
+
+  </table>
+</div>
+<center>
+<a href="/dashboard"><button class="btn btn-outline-dark mr-1 mb-3"><i class="fa fa-arrow-left"></i>Back</button></a>
+ <button type="button" id="print" class="btn btn-outline-primary mr-1 mb-3"><i class="fa fa-print"></i> Print</button>
+      <script>
+		document.querySelector("#print").addEventListener("click", function() {
+	window.print();
+});
+	</script>
+</center>
+<br>
+<br>
+        {{>dashfooter status="hidden"}}
+
+</body>
+</html>

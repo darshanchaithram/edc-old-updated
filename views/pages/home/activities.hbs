@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html dir='ltr' lang='en-US'>
+<head>
+
+	<meta http-equiv='content-type' content='text/html; charset=utf-8' />
+	<!-- Disable screen scaling-->
+  <meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0'>
+
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i' rel='stylesheet' type='text/css' />
+	<link rel='stylesheet' href='/assets/css/bootstrap.min.css' type='text/css' />
+	<link rel='stylesheet' href='/assets/css/timeline_style.css' type='text/css' />
+	<link rel='stylesheet' href='/assets/css/animate_timeline.css' type='text/css' />
+	<link rel='stylesheet' href='/assets/css/magnific-popup_timeline.css' type='text/css' />
+	<link rel='stylesheet' href='/assets/fonts/font-awesome.min.css'>
+	
+	<link rel='stylesheet' href='/assets/css/responsive_timeline.css' type='text/css' />
+
+
+	<!-- Document Title
+	============================================= -->
+	<title>iEDC Activities</title>
+		<!--Page Icon in title bar-->
+		<link rel='icon' type='img/png' href='/assets/img/logo.ico'>
+	
+	<style type='text/css'>
+		#act,#page-title,#content{
+		background: linear-gradient(to right,#13547a,#80d0c7 );
+		
+		}
+		h1,h2,p,#thead,.text{
+			color:#ffffff!important;
+		}
+		#dateline{
+		background-color: rgba(0, 96, 100, 0.9);
+		color:#ffffff;
+		border-radius: 25px;
+
+		}
+		.entry-meta,{
+			color:#000000!important;
+		}
+
+		.all-menu-wrapper{
+		background-color: rgba(0, 96, 100, 2.9)!important;
+		
+
+		}
+		.navbar-mainmenu{
+		background-color: rgba(0,96,100,0.8)!important;
+		}
+
+		
+	</style>
+	
+	<!-- Main CSS files -->
+  	<link rel='stylesheet' href='/assets/css/activitiesnavbar.css'>
+  	<link rel='stylesheet' href='/assets/fonts/opensans/stylesheet.css'>
+</head>
+
+
+
+<body class='stretched' id="act">
+
+    {{>navbar-main}}
+  
+    </div>
+    <!-- end of menu wrapper -->
+
+  </header>
+  <!-- END OF site header Menu--><br><br>
+
+  <div id='wrapper' class='clearfix'>
+    <section id='page-title'>
+      <div class='container clearfix'>
+        <span id='thead'><h1 style='color: white'>Activities we have done so far</h1></span>
+      </div>
+    </section>
+    
+    <section id='content'>
+      <div class='content-wrap'>
+        <div class='container clearfix'>
+          <div id='posts' class='post-grid grid-container post-masonry post-timeline grid-2 clearfix'>
+            <div class='timeline-border'></div>
+
+    
+        <!--a section - images + description -->
+
+            {{#each items}}
+              <div class='entry entry-date-section' id="demo{{this._id}}" hidden="">
+                <span id='dateline'>YEAR <c id="lined{{this._id}}"></c>
+                </span>
+              </div> 
+                <div class='entry clearfix'>
+                        <div class='entry-timeline'>
+                          <div class='timeline-divider'></div>
+                        </div>
+                                  {{#if imageyes}}
+                                    <!--Image section start-->
+                                    <div class='entry-image'>
+                                      <div class='fslider' data-arrows='false' data-lightbox='gallery'>
+                                        <div class='flexslider'>
+                                          <div class='slider-wrap'>
+                                            {{#each image}}
+                                              <div class='slide'>
+                                                <a href='/assets/images/activities/{{../this.year}}/{{this}}.jpg' data-lightbox='gallery-item'>
+                                                <img class='image_fade' src='/assets/images/activities/{{../this.year}}/{{this}}.jpg' alt='$title image'>
+                                                </a>
+                                              </div>
+                                              {{/each}}
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!--image section over-->
+                                  {{/if}}
+                        
+                            <div class='entry-title'>
+                            <h2>
+                            <img class='image_fade' src='/assets/images/activities/{{this.type}}.png' alt='{{this.type}} Logo' style='height:50px; width:50px;
+                            border-radius:50%;'>&nbsp;{{this.title}}</h2>
+                          </div>
+                          <ul class='entry-meta clearfix'>
+                            <li style='color: white'><i class='fa fa-calendar'></i>
+                              <span id="month{{this._id}}"></span>
+                              <span id="day{{this._id}}"></span>,
+                              <span id="year{{this._id}}"></span>
+                            </li>
+                            {{> dateformatscript }}
+                          </ul>
+                          <div class='entry-content'>
+                            <p>{{this.detail}}</p>
+                          </div>
+                          </div>
+                    
+        <!-- end of a section -->
+              <script>
+                  //Simple program to view the title only once in each year's data
+                  var year={{this.year}};
+                  var next;
+                  if(year!=next){
+                      document.getElementById("lined{{this._id}}").innerHTML=year;//{{this.id}} is included to make all the titles unique
+                      document.getElementById("demo{{this._id}}").hidden=false;
+                      next=year;//this value actually goes into the next loop of each container so that comparison takes place as we needed
+                  }
+              </script>
+            {{/each}}
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- Javascript main files -->
+      <script src='/assets/js/vendor/jquery-1.12.4.min.js'></script>
+      <script src='/assets/js/main.js'></script>
+
+      <!-- Go To Top
+      ============================================= -->
+      <div id='gotoTop' class='fa fa-angle-up'></div>
+
+      <!-- External JavaScripts
+      ============================================= -->
+      <script src='/assets/js/jquery_timeline.js'></script>
+      <script src='/assets/js/plugins_timeline.js'></script>
+
+      <!-- Footer Scripts
+      ============================================= -->
+      <script src='/assets/js/functions_timeline.js'></script>
+
+
+      <!-- scripts -->
+      <!-- All Javascript plugins goes here -->
+
+      <!-- All vendor scripts -->
+
+      <script src='/assets/js/vendor/all.js'></script>
+
+      <!-- Form script -->
+      <script src='/assets/js/form_script.js'></script>
+
+      <!-- Javascript main files -->
+      <script src='/assets/js/main.js'></script>
+
+
+      <script src='/assets/js/activities.js'>
+      </script>
+
+</body>
+</html>

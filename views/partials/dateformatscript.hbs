@@ -1,0 +1,8 @@
+   <script type="text/javascript">
+              var d = new Date("{{this.date}}");
+              console.log("Hello webpage"+ d);
+              document.getElementById("year{{this._id}}").innerHTML = d.getFullYear();
+              document.getElementById("day{{this._id}}").innerHTML = d.getDate();
+              var months = ["Jan","Feb","Mar","Apr","May","June","July","Aug","Sept","Oct","Nov","Dec"];
+              document.getElementById("month{{this._id}}").innerHTML = months[d.getMonth()];
+    </script>

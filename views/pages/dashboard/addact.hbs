@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        <title></title>
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="shortcut icon" href="/assets/dashboard/media/favicons/favicon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/assets/dashboard/media/favicons/favicon-192x192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/dashboard/media/favicons/apple-touch-icon-180x180.png">
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+        <!-- Fonts and OneUI framework -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+        <link rel="stylesheet" id="css-main" href="/assets/dashboard/css/oneui.min.css">
+        <link rel="stylesheet" href="/assets/dashboard/js/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+        
+
+        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+        <!-- <link rel="stylesheet" id="css-theme" href="/assets/dashboard/css/themes/amethyst.min.css"> -->
+        <!-- END Stylesheets -->
+    </head>
+    <body>
+        <!-- Page Container -->
+        <!--
+            Available classes for #page-container:
+
+        GENERIC
+
+            'enable-cookies'                            Remembers active color theme between pages (when set through color theme helper Template._uiHandleTheme())
+
+        SIDEBAR & SIDE OVERLAY
+
+            'sidebar-r'                                 Right Sidebar and left Side Overlay (default is left Sidebar and right Side Overlay)
+            'sidebar-mini'                              Mini hoverable Sidebar (screen width > 991px)
+            'sidebar-o'                                 Visible Sidebar by default (screen width > 991px)
+            'sidebar-o-xs'                              Visible Sidebar by default (screen width < 992px)
+            'sidebar-dark'                              Dark themed sidebar
+
+            'side-overlay-hover'                        Hoverable Side Overlay (screen width > 991px)
+            'side-overlay-o'                            Visible Side Overlay by default
+
+            'enable-page-overlay'                       Enables a visible clickable Page Overlay (closes Side Overlay on click) when Side Overlay opens
+
+            'side-scroll'                               Enables custom scrolling on Sidebar and Side Overlay instead of native scrolling (screen width > 991px)
+
+        HEADER
+
+            ''                                          Static Header if no class is added
+            'page-header-fixed'                         Fixed Header
+
+        HEADER STYLE
+
+            ''                                          Light themed Header
+            'page-header-dark'                          Dark themed Header
+
+        MAIN CONTENT LAYOUT
+
+            ''                                          Full width Main Content if no class is added
+            'main-content-boxed'                        Full width Main Content with a specific maximum width (screen width > 1200px)
+            'main-content-narrow'                       Full width Main Content with a percentage width (screen width > 1200px)
+        -->
+        <div id="page-container" class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed">
+            
+            {{> dashnav three="active"}}
+
+            <!-- Main Container -->
+            <main id="main-container">
+
+                <!-- Hero -->
+                <div class="bg-body-light">
+                    <div class="content content-full">
+                        <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
+                            <h1 class="flex-sm-fill h3 my-2">
+                                Add New Activity 
+                            </h1>
+                            <nav class="flex-sm-00-auto ml-sm-3" aria-label="breadcrumb">
+                                <ol class="breadcrumb breadcrumb-alt">
+                                    <li class="breadcrumb-item">Dashboard</li>
+                                    <li class="breadcrumb-item" aria-current="page">
+                                        <a class="link-fx" href="">Add Activity</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Hero -->
+
+                <!-- Page Content -->
+                <div class="content">
+                    <!-- With Text -->
+                    <div class="block">
+                        <div class="block-header">
+                            <h3 class="block-title">Enter Data</h3>
+                        </div>
+                        <div class="block-content block-content-full">
+                            <form action="/dashboard/addactivity" method="POST" enctype="multipart/form-data">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <p class="font-size-sm text-muted">
+                                            This entered data will be updated in the activities page
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-8 col-xl-5">
+                                        <div class="form-group">
+                                            <label for="title">Activity Title :</label>
+                                            <input type="text" class="form-control" id="title" placeholder="Enter Title" name="title" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="acdate">Activity date :</label>
+                                            <input type="text" class="js-datepicker form-control" name="acdate" id="acdate" data-week-start="1" data-autoclose="true" data-today-highlight="true" data-date-format="yyyy-mm-dd" placeholder="yyyy-mm-dd" required onkeyup="loaddate()">
+                                            <!--
+                                            <input type="date" class="form-control" name="acdate" placeholder="yyyy-mm-dd" required>
+                                            -->
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="detail">Short Description:</label>
+                                            <input type="detail" class="form-control" id="detail" placeholder="Activity description" name="detail" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="sel1">Activity Type : </label>
+                                            <select class="form-control" id="sel1" name="type" required>
+                                                <option value="default">Default</option>
+                                                <option value="techub">Techub</option>
+                                                <option value="entreprenia">Entreprenia</option>
+                                                <option value="tinkerhub">Tinkerhub</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="fupload">Activity Images (Max 4 images): </label>
+                                            <div class="small text-muted">(<b style="color:red;">jpg only</b> images compressed at <a href="https://tinypng.com" target="blank_">tinypng.com</a> is recommmended)</div>
+                                            <div class="custom-file">
+                                                <!-- Populating custom file input label with the selected filename (data-toggle="custom-file-input" is initialized in Helpers.coreBootstrapCustomFileInput()) -->
+                                                <!-- When multiple files are selected, we use the word 'Files'. You can easily change it to your own language by adding the following to the input, eg for DE: data-lang-files="Dateien" -->
+                                                <input type="file" class="custom-file-input" data-toggle="custom-file-input" id="fupload" name="fupload" onchange="updFile()" multiple >
+                                                <label class="custom-file-label" for="example-file-input-multiple-custom">Choose files</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group" hidden>
+                                            <label for="fileno">Files :</label>
+                                            <input type="text" class="form-control" id="fileno" placeholder="Number of files" name="fileno" value="0" required>
+                                        </div>
+                                            <div class="small text-muted" id="demo"></div>
+                                            <br>
+
+                                        <div class="form-group">
+                                            <input type='submit' class='btn btn-primary btn-block align-content-center' value='Upload data'></input>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </form>
+                        </div>
+                        <script>
+                            function updFile(){
+                                var x = document.getElementById("fupload");
+                                var dt = document.getElementById("acdate").value;
+                                dt = dt.replace(/-/g, "");
+                                var d = new Date();
+                                dt = dt+""+d.getHours()+""+d.getMinutes()+""+d.getSeconds();
+                                var txt = "";
+                                var number=0;
+                                number=number+x.files.length;
+                                if ('files' in x) {
+                                    if (x.files.length == 0) {
+                                    txt = "Select one or more files.";
+                                    } 
+                                    else {
+                                        for (var i = 0; i < x.files.length; i++) {
+                                            txt += "<br><strong>" + (i+1) + ". file</strong><br>";
+                                            var file = x.files[i];
+                                            if ('name' in file) {
+                                            txt += "name: " + file.name + "<br>";
+                                            }
+                                            if ('size' in file) {
+                                            txt += "size: " + file.size + " bytes <br>";
+                                            }
+                                        }
+                                    }
+                                } 
+                                else {
+                                    if (x.value == "") {
+                                    txt += "Select one or more files.";
+                                    } else {
+                                    txt += "The files property is not supported by your browser!";
+                                    txt  += "<br>The path of the selected file: " + x.value; // If the browser does not support the files property, it will return the path of the selected file instead. 
+                                    }
+                                }
+                                document.getElementById("demo").innerHTML = txt;
+                                document.getElementById("fileno").value = number;
+                                }
+
+                        </script>
+
+            {{> dashfooter status="hidden"}}
+
+       
+        <script src="/assets/dashboard/js/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+        <!-- Page JS Helpers (BS Datepicker + BS Colorpicker + BS Maxlength + Select2 + Masked Inputs + Ion Range Slider plugins) -->
+        <script src="/assets/dashboard/js/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+      
+        <script>jQuery(function(){ One.helpers(['datepicker', 'colorpicker', 'maxlength', 'select2', 'masked-inputs', 'rangeslider']); });</script>
+    </body>
+</html>

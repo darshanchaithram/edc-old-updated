@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        <title></title>
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="shortcut icon" href="/assets/dashboard/media/favicons/favicon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/assets/dashboard/media/favicons/favicon-192x192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/dashboard/media/favicons/apple-touch-icon-180x180.png">
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+        <!-- Fonts and OneUI framework -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+        <link rel="stylesheet" id="css-main" href="/assets/dashboard/css/oneui.min.css">
+
+        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+        <!-- <link rel="stylesheet" id="css-theme" href="/assets/dashboard/css/themes/amethyst.min.css"> -->
+        <!-- END Stylesheets -->
+    </head>
+    <body>
+        
+        <div id="page-container" class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed">
+            
+           
+            {{> dashnav four="active"}}
+            <!-- Main Container -->
+            <main id="main-container">
+
+                <!-- Hero -->
+                <div class="bg-body-light">
+                    <div class="content content-full">
+                        <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
+                            <h1 class="flex-sm-fill h3 my-2">
+                                Settings 
+                            </h1>
+                            <nav class="flex-sm-00-auto ml-sm-3" aria-label="breadcrumb">
+                                <ol class="breadcrumb breadcrumb-alt">
+                                    <li class="breadcrumb-item">Dashboard</li>
+                                    <li class="breadcrumb-item" aria-current="page">
+                                        <a class="link-fx" href="">Settings</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Hero -->
+
+                <!-- Page Content -->
+                <div class="content">
+                    <div class="row">
+                        <!-- Change password -->
+                        <div class="col-md-6">
+                            <a class="block block-rounded block-link-shadow" href="/dashboard/settings/changepassword">
+                                <div class="block-content text-center">
+                                    <div class="py-3">
+                                        <div class="mb-3">
+                                            <i class="fa fa-key fa-2x text-danger"></i>
+                                        </div>
+                                        <p class="font-size-lg">Change Password<p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Change password -->
+                            {{#if authdata.passport.user.permission}}
+                                <!-- View user -->
+                                <div class="col-md-6">
+                                    <a class="block block-rounded block-link-shadow" href="/dashboard/settings/users">
+                                        <div class="block-content text-center">
+                                            <div class="py-3">
+                                                <div class="mb-3">
+                                                    <i class="fa fa-users fa-2x text-default"></i>
+                                                </div>
+                                                <p class="font-size-lg">View Users<p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- END View user -->
+                                <!-- Add User -->
+                                <div class="col-md-6">
+                                    <a class="block block-rounded block-link-shadow" href="/dashboard/settings/adduser">
+                                        <div class="block-content text-center">
+                                            <div class="py-3">
+                                                <div class="mb-3">
+                                                    <i class="fa fa-user-plus fa-2x text-success"></i>
+                                                </div>
+                                                <p class="font-size-lg">Add User<p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- END Add User -->
+                            {{/if}}
+                        <!-- Add activity -->
+                        <div class="col-md-6">
+                            <a class="block block-rounded block-link-shadow" href="/dashboard/addactivity">
+                                <div class="block-content text-center">
+                                    <div class="py-3">
+                                        <div class="mb-3">
+                                            <i class="fa fa-folder-plus fa-2x text-modern"></i>
+                                        </div>
+                                        <p class="font-size-lg">Add Activity<p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Add activity -->
+                        <!-- Log out -->
+                        <div class="col-md-6">
+                            <a class="block block-rounded block-link-shadow" href="" data-toggle="modal" data-target="#modal-block-fadein">
+                                <div class="block-content text-center">
+                                    <div class="py-3">
+                                        <div class="mb-3">
+                                            <i class="si si-logout fa-2x text-city"></i>
+                                        </div>
+                                        <p class="font-size-lg">Log Out<p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Log out -->
+                    
+                    {{> dashfooter status="hidden"}}
+
+        <!--
+            OneUI JS Core
+
+            Vital libraries and plugins used in all pages. You can choose to not include this file if you would like
+            to handle those dependencies through webpack. Please check out /assets/dashboard/_es6/main/bootstrap.js for more info.
+
+            If you like, you could also include them separately directly from the /assets/dashboard/js/core folder in the following
+            order. That can come in handy if you would like to include a few of them (eg jQuery) from a CDN.
+
+            /assets/dashboard/js/core/jquery.min.js
+            /assets/dashboard/js/core/bootstrap.bundle.min.js
+            /assets/dashboard/js/core/simplebar.min.js
+            /assets/dashboard/js/core/jquery-scrollLock.min.js
+            /assets/dashboard/js/core/jquery.appear.min.js
+            /assets/dashboard/js/core/js.cookie.min.js
+        -->
+       
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="handlebars/dist/handlebars.min.js"></script>
+    <script src="handlebars-intl/dist/handlebars-intl.min.js"></script>
+</head>
+<body>
+    <!--<h1>Mongodb Test</h1>
+        <form action="/insert" method="POST">
+        <div class="input">
+            <label for="id">Id</label>
+            <input type="number" name="id"  />
+        </div>
+        <div class="input">
+            <label for="title">Title</label>
+            <input type="text" name="title"  />
+        </div>
+        <div class="input">
+            <label for="type">Type</label>
+            <input type="text" name="type"  />
+        </div>
+        <div class="input">
+            <label for="regno">Regno</label>
+            <input type="text" name="regno"  />
+        </div>
+        <div class="input">
+            <label for="fname">Foundername</label>
+            <input type="text" name="fname"  />
+        </div>
+        <div class="input">
+            <label for="fpos">Fpos</label>
+            <input type="text" name="fpos"  />
+        </div>
+        <div class="input">
+            <label for="content">Content</label>
+            <input type="text" name="content" id="content" />
+        </div>
+        <!-- <div class="row formpad">
+			<div class="form-group col-md-12" ><label for="desc">Please provide a brief description of your business idea<font color=red>*</font></label>
+    			<textarea name="desc" id="desc" class="form-control-line form-control-white" required maxlength="3000" placeholder="Describe your Idea" /></textarea>
+			</div>
+		</div> --
+        <button type="submit">Insert</button>
+        </form> -->
+    <section class="getdata">
+        <h3>Get data</h3>
+        <!--<a href="/get-data">Load Data</a>-->
+        {{#each items}}
+            <hr color="red">
+        {{this._id}}
+        <br>
+            {{#each this.act}}
+                {{this.title}}<br>
+                {{this.date}}<br>
+                {{this.detail}}<br>
+                {{#each image}}
+                                          <div class='slide'>
+                                                  <a href='/assets/images/activities/{{../this.year}}/{{this.imageid}}.jpg' data-lightbox='gallery-item'>
+                                                  <img class='image_fade' src='/assets/images/activities/{{../this.year}}/{{this.imageid}}.jpg' alt='$title image'>
+                                                  </a>
+                                            </div>
+                                            {{/each}}
+            <hr>
+            {{/each}}
+        <br>
+            <hr color="red">
+        {{/each}}
+        <div>
+           
+        </div>
+    </section>
+</body>
+</html>
+
+

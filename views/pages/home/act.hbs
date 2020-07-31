@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        [<br>
+     {{#each items}}
+        <hr>{<br>
+        <div id="demo{{this.title}}"></div>
+        <br>
+            "_id":"{{this._id}}",
+            <br>
+            "year":"{{this.year}}",
+            <br>
+            "date":"{{this.date}}",
+            <br>
+            "title":"{{this.title}}",
+            <br>
+            "detail":"{{this.detail}}",
+            <br>
+            "type":"{{this.type}}",
+            <br>
+            "imageyes":{{this.imageyes}},
+            <br>
+            "images":"{{this.images}}",
+            <br>
+            "image":{{this.image}}
+            <br>
+        },
+        <br>
+        <script>
+            //Simple program to view the title only once in each year's data
+            var year={{this.year}};
+            var next;
+            if(year!=next){
+                document.getElementById("demo{{this.title}}").innerHTML=year;
+                next=year;
+            }
+        </script>
+        
+            <br>
+    {{/each}}
+]<br>
+</body>
+</html>

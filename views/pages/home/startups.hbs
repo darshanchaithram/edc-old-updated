@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="/assets/css/animate.css">
+      <link rel="stylesheet" href="/assets/css/modal.css">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <title>
+         {{ title }}
+      </title>
+      <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+      <link href="/assets/css/index.css" rel="stylesheet" />
+            <!--Navbar area beginning-->
+            <!-- Web fonts and Web Icons -->
+            <link rel="stylesheet" href="/assets/fonts/opensans/stylesheet.css">
+            <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
+
+            <!-- Vendor CSS style -->
+            <link rel="stylesheet" href="/assets/css/pageloader.css">
+            <!-- Main CSS files -->
+
+             <!-- add alt layout here -->
+             <link rel="stylesheet" href="/assets/css/activitiesnavbar.css">
+
+             <!--navbar area end-->
+
+      <!--Style for making card buttons-->
+      <style type="text/css">
+         .btn{
+         background-color: #ffffff;
+         border: 0 solid #000;
+         border-radius: 10px;
+         }
+        .btn:hover{
+         background-color: #fff;
+           color: white;
+           border: #3e8e41;
+         }
+         @media screen and (min-width: 768px) {
+          p.card-description {
+             font-size:1vw;
+           }
+         }
+         @media screen and (min-width: 768px) {
+           .card-title {
+             font-size:1.6vw;
+           }
+         }
+         @media screen and (min-width: 768px) {
+         small.card-description {
+             font-size:1vw;
+           }
+         }
+
+         @media screen and (max-width: 767px) {
+           p.card-description {
+             font-size:3vw;
+           }
+         }
+         @media screen and (max-width: 767px) {
+           .card-title {
+             font-size:4.5vw;
+           }
+         }
+         @media screen and (max-width: 767px) {
+           small.card-description {
+             font-size:3vw;
+           }
+
+         }
+         .page-header{
+            height:0!important;
+            background: transparent!important;
+            border: none!important;
+            box-shadow: none!important;
+         }
+
+         h6,.nav-link{
+            font-size: 100%!important;
+            font-weight: bold!important;
+            color:white!important;
+            height:0!important;
+            left: 0!important;
+         }
+         h6:hover,.nav-link:hover{
+            color: #D1335B!important;
+            opacity: 1;
+            transition: 0.2s;
+         }
+         ul {
+         padding: 0!important;
+         list-style: none!important;
+         }
+         a,h6,.nav-link{
+            margin: 0!important;
+            padding: 0!important;
+         }
+
+         .all-menu-wrapper{
+         background-color: rgba(0, 96, 100, 2.9)!important;
+      
+
+          }
+         .navbar-mainmenu{
+         background-color: rgba(0,96,100,0.8)!important;
+         }
+         }
+         .landing-page,body,.main,.section{
+          background: linear-gradient(to right,rgba(19,84,122,0.3),rgba(128,208,199,0.3) )!important;
+          mar
+          }
+          
+      </style>
+       <style>
+         .no-js #loader { display: none;  }
+       .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+       .se-pre-con {
+         position: fixed;
+         left: 0px;
+         top: 0px;
+         width: 100%;
+         height: 100%;
+         z-index: 9999;
+         background: url(/assets/images/edclogo.gif) center no-repeat #fff;
+       }
+         </style>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+         <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+         <script>
+         //paste this code under the head tag or in a separate js file.
+           // Wait for window load
+           $(window).load(function() {
+             // Animate loader off screen
+             $(".se-pre-con").delay(150).fadeOut("slow");;
+           });
+         </script>
+      
+   </head>
+   <body class="landing-page sidebar-collapse" style="background: linear-gradient(to right,rgba(19,84,122,8.5),rgba(128,208,199,8.5)) !important; margin: 0">
+
+    <!-- Page Loader : just comment these lines to remove it -->
+  <div class="se-pre-con"></div>
+
+  <!-- BEGIN OF site header Menu -->
+  <header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
+
+    <!-- Begin of menu icon toggler -->
+    <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
+      <!-- Available class : menu-icon-dot / menu-icon-thick /menu-icon-random -->
+      <span class="menu-icon menu-icon-random">
+        <span class="bars">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </span>
+      </span>
+    </button>
+    <!-- End of menu icon toggler -->
+
+    <!-- Begin of logo/brand -->
+    <a class="navbar-brand" href="/edc">
+      <span class="logo">
+        <img class="light-logo" src="/assets/images/logo.png" alt="EDCLogo">
+      </span>
+      <span class="text">
+        <span class="line"><font color="white">iEDC NSSCE</font></span>
+        <span class="line sub"></span>
+      </span>
+    </a>
+    <!-- End of logo/brand -->
+
+    <!-- begin of menu wrapper -->
+    <div class="all-menu-wrapper" id="navbarMenu">
+     
+
+      <!-- Begin of hamburger mainmenu menu -->
+      <nav class="navbar-mainmenu">
+        <ul class="navbar-nav mr-auto">
+         
+          <li class="nav-item" >
+            <a  href="/"><h6 align="left" >Home</h6><br><br style="content:''!important;margin: 3em;display: block;font-size: 9%;"></a>
+            <a  href="/startups"><h6 align="left" >Startups</h6><br><br style="content:''!important;margin: 3em;display: block;font-size: 10%;"></a>
+            <a  href="/activities"><h6 align="left" >Activities</h6><br><br style="content:''!important;margin: 3em;display: block;font-size: 10%;"></a>
+            <a  href="/team"><h6 align="left" >Team</h6><br><br style="content:''!important;margin: 3em;display: block;font-size: 10%;"></a>
+            <a  href="/register"><h6 align="left" >Register Startup</h6><br><br style="content:''!important;margin: 3em;display: block;font-size: 10%;"></a>
+            <a class="nav-link" href="/"><h6 align="left" >Contact</h6></a><br>
+          </li>
+          
+        </ul>
+      </nav>
+      <!-- End of hamburger mainmenu menu -->
+
+      
+    </div>
+    <!-- end of menu wrapper -->
+
+  </header>
+  <!-- END OF site header Menu-->
+   
+      <div class="main main-raised" style="background: transparent; margin:0px">
+      <div class="section text-center" id="myteam" style="padding: 30px">
+          <div class="container text-center">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1 style="color: white">The Start-Up Page</h1>
+                  <div class="typed" style="color: white">
+                     <h3>Meet some of the best and newest startups in <b>NSSCE</b></h3>
+                  </div>
+                  <br>
+               </div>
+            </div>
+         </div>
+         <div class="team">
+
+            <!--Row start-->
+            <div class="row" >
+
+                <!--Code for 1 card-->
+                <div class="col-md-3 slideanim">
+                     <button id="NIVATA" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                        <div class="team-player" >
+                           <div class="card card-plain" style="border: 0">
+                              <div class="col-md-8 ml-auto mr-auto">
+                                 <img src="/assets/images/startups/NIVATA INFOSEC.png" alt="Nivata" class="img-raised rounded-circle img-fluid">
+                              </div>
+                              <h4 class="card-title">NIVATA <BR>INFOSEC
+                                 <br>
+                                 <small class="card-description text-muted">SREEKANTH SASI</small>
+                              </h4>
+                              <div class="card-body">
+                                 <p class="card-description" >CYBERSECURITY
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                  </div>
+                  </button>
+                  <!--Modal start-->
+                   <div id="NIVATA_modal" class="modal" >
+                     <div class="modal-content">
+                        <div id="NIVATA_modal_body" class="modal-body">
+                           <iframe width="70%" height="450px" src="startup/33" style="position: fixed;top: 20%;left: 20%"></iframe>
+                           <span class="close NIVATA_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+   
+                        </div>
+                     </div>
+                  </div>
+                  <!--End of modal-->
+                  <!--End of One card-->
+
+              <!-- card start -->
+               <div id="KENLEAD_modal" class="modal" >
+                  <div class="modal-content">
+                     <div id="KENLEAD_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/32" style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close KENLEAD_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+                <div class="col-md-3 slideanim">
+                  <button id="KENLEAD" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/KENLEAD.png" alt="Kenlead" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >KENLEAD<br>
+                              <br>
+                              <small class="card-description text-muted">Sonu krishnan</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >BOOK PUBLISHERS
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+               <!-- card end -->
+
+              <!--Code for 1 card-->
+               <div class="col-md-3 slideanim">
+                  <button id="LENTARK" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player" >
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/LENTARK.png" alt="Lentark" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title">LENTARK
+                              <br>
+                              <small class="card-description text-muted">MOHAMED SAHEER <br style="content:''!important;margin: -0.3em;display: block;">MARAKATHEL </small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >HARDWARE TECH
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+               <!--Modal start-->
+                <div id="LENTARK_modal" class="modal" >
+                  <div class="modal-content">
+                     <div id="LENTARK_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/31"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close LENTARK_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+
+                     </div>
+                  </div>
+               </div>
+               <!--End of modal-->
+               <!--End of One card-->
+
+              <!--Code for 1 card-->
+               <div class="col-md-3 slideanim">
+                  <button id="TRICODIA" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player" >
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/TRICODIA.png" alt="Tricodia" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title">TRICODIA <br style="display:block; margin-top:5%; content: ' '">
+                              <small class="card-description text-muted">Sachin Dev </small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >SOFTWARE <br>CONSULTING
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+               <!--modal start-->
+                <div id="TRICODIA_modal" class="modal" >
+                  <div class="modal-content">
+                     <div id="TRICODIA_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/30"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close TRICODIA_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+
+                     </div>
+                  </div>
+               </div>
+               <!--end of modal-->
+               <!--End of One card-->
+
+                <!-- Card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="hexaren" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/HEXAREN.png" alt="Hexaren" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title">HEXAREN<br>
+                              <br>
+                              <small class="card-description text-muted">GOVIND</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >BOOK PUBLISHERS
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+               <div id="hexaren_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="hexaren_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/29"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close hexaren_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+
+                     </div>
+                  </div>
+               </div>
+               <!-- Card end -->
+
+               <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="PHACSIN" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/PHACSIN.png" alt="Phacsin" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >PHACSIN<br style="display:block; margin-top:5%; content: ' '">
+                              <small class="card-description text-muted">HARIKRISHNAN R</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >PRODUCT<br> DEVOLOPEMENT
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="PHACSIN_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="PHACSIN_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/28"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close PHACSIN_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+
+               <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="toy" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/TOYSMITHS.png" alt="Toysmith" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >TOYSMITHS<br>
+                              <br>
+                              <small class="card-description text-muted">FAYAD S</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >ROBOTICS
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="toy_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="toy_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/27"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close toy_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- card end-->
+
+               <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="INSI8" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/INSI8.png" alt="Insi8" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >INSI8<br>
+                              <br>
+                              <small class="card-description text-muted">SOORAJ R</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >SOFTWARE
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="INSI8_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="INSI8_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/26"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close INSI8_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+
+                <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="ZERONE" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/ZERONE.png" alt="Zerone" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >ZERONE<br>
+                              <br>
+                              <small class="card-description text-muted">SACHIN DEV</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >SOFTWARE
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="ZERONE_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="ZERONE_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/25"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close ZERONE_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+
+               <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="KARELA" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/KARELA.png" alt="Karela" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >KARELA<br>
+                              <br>
+                              <small class="card-description text-muted">ATHUL R</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >SOFTWARE
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="KARELA_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="KARELA_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/24"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close KARELA_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+
+               <!--Card Start-->
+               <div class="col-md-3 slideanim">
+                  <button id="OUI" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/OUI.png" alt="OUI" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >OUI<br>
+                              <br>
+                              <small class="card-description text-muted">Suraj R </small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >Electronics
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+               <div id="OUI_modal" class="modal" >
+                  <div class="modal-content">
+                     <div id="OUI_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/23"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close OUI_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+               <!--Card end-->
+
+              <!-- Card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="offcube" class="btn btn-outline-white box foo" onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/OFFCUBE TECHNOLOGIES.png" alt="Offcube tech" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" style="content: '';margin-left: -0.3em!important;margin-right:-0.3em;">OFFCUBE <br style="content:''!important;margin-bottom:-0.2em;display: block;">TECHNOLOGIES
+                              <br>
+                              <small class="card-description text-muted">JOYAL JOSE P D</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >SOFTWARE
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+			         <div id="offcube_id">
+               <div id="offcube_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="offcube_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/22"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close offcube_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+			         </div>
+               <!-- Card end -->
+
+               <!-- Card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="alila" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/ALILA CREATIONS.png" alt="Alila creations" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >ALILA <br>CREATIONS
+                              <br>
+                              <small class="card-description text-muted">VIJAY V</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >CRAFT
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+               <div id="alila_modal" class="modal" >
+                  <div class="modal-content">
+                     <div id="alila_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/21"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close alila_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- Card end -->
+
+               <!--Card start-->
+               <div class="col-md-3 slideanim">
+                  <button id="UNI5IVE" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/UNI5IVE.png" alt="Uni5ive" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >UNI5IVE<br>
+                              <br>
+                              <small class="card-description text-muted">Akshay VS</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >SERVICE SECTOR
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+               <div id="UNI5IVE_modal" class="modal" >
+                  <div class="modal-content">
+                     <div id="UNI5IVE_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/20"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close UNI5IVE_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+
+                     </div>
+                  </div>
+             </div>
+               <!--Card end-->
+
+               <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="techacer" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/TECHACER TECHNOLOGIES.png" alt="Techacer" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title"  style="content: '';margin-left: -0.3em!important;margin-right:-0.3em;">TECHACER <br>TECHNOLOGIES
+                              <br>
+                              <small class="card-description text-muted">AKHIL GOPAL</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >ELECTRONICS
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+               <div id="techacer_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="techacer_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/19"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close techacer_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+
+              <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="root" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/ROOTLABS.png" alt="Rootlabs" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >ROOTLABS<br>
+                              <br>
+                              <small class="card-description text-muted">FRANCIS C</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >MEDIA
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+               <div id="root_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="root_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/18"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close root_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+
+               
+
+               <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="rustic" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/RUSTIC TECHNOLOGIES.png" alt="Rustic tech" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" style="content: '';margin-left: -0.3em!important;margin-right:-0.3em;">RUSTIC <br>TECHNOLOGIES
+                              <br>
+                              <small class="card-description text-muted">RAGIL</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >IOT
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="rustic_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="rustic_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/17"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close rustic_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+
+               <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="cafe" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/CAFE BREAK.png" alt="Cafe break" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >CAFÉ BREAK<br>
+                              <br>
+                              <small class="card-description text-muted">ASHOKAN</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >CAFFETERIA
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="cafe_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="cafe_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/16"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close cafe_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+
+               <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="arc" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/ARC STUDIOS.png" alt="Arc Studios" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >ARC STUDIOS<br>
+                              <br>
+                              <small class="card-description text-muted">ASWIN RAM</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >MEDIA
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="arc_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="arc_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/15"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close arc_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+
+               <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="cray" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/BE CRAY.png" alt="Be cray" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >BE CRAY<br>
+                              <br>
+                              <small class="card-description text-muted">JITHU KIRAN</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >SOFTWARE
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="cray_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="cray_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/14"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close cray_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+
+               <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="VORAUS" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/VORAUS.png" alt="Voraus" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >VORAUS<br>
+                              <br>
+                              <small class="card-description text-muted">NAFIH C</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >SOFTWARE
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="VORAUS_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="VORAUS_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/13"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close VORAUS_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+
+             
+
+               <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="REENBOOG" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+
+                              <img src="/assets/images/startups/REENBOOG.png" alt="Reenboog" class="img-raised rounded-circle img-fluid">
+                            </div>
+
+                           <h4 class="card-title" >REENBOOG<br>
+                              <br>
+                              <small class="card-description text-muted">FEBIN JISHAL</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >MEDIA
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="REENBOOG_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="REENBOOG_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/12"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close REENBOOG_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+
+              <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="slate" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/SLATE AND PENCIL.png" alt="Slate and Pencil" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" style="content: '';margin-left: -0.3em!important;margin-right:-0.3em;">SLATE & PENCIL<br>
+                              <br>
+                              <small class="card-description text-muted">GOPIKRISHNAN V NAIR</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >SOFTWARE
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="slate_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="slate_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/11"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close slate_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+              <!-- card end-->
+
+              
+
+               <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="QUICKSPLIT" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/QUICKSPLIT.png" alt="Quicksplit" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >QUICKSPLIT<br>
+                              <br>
+                              <small class="card-description text-muted">ARAVIND SAI</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >SOFTWARE
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="QUICKSPLIT_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="QUICKSPLIT_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/10"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close QUICKSPLIT_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+
+               <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="FEDYMS" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/FEDYMS.png" alt="Fedyms" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >FEDYMS<br>
+                              <br>
+                              <small class="card-description text-muted">ARAVIND SAI</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >SOFTWARE
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="FEDYMS_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="FEDYMS_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/9"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close FEDYMS_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+
+              <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="infosec" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/INFINITY INFOSEC.png" alt="Infinity infosec" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" style="content: '';margin-left: -0.3em!important;margin-right:-0.3em;">INFINITY<br> INFOSEC<br>
+                              <small class="card-description text-muted">SURAJ SURESH</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >SOFTWARE
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="infosec_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="infosec_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/8"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close infosec_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+
+               <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="MAVERICKS" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/MAVERICKS.png" alt="Mavericks" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >MAVERICKS<br>
+                              <br>
+                              <small class="card-description text-muted">JITHIN BABU</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >MECHANICAL
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="MAVERICKS_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="MAVERICKS_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/7"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close MAVERICKS_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+
+               <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="AEM" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/AEM.png" alt="AEM" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >AEM
+                            <br style="content:''!important;margin: 0.6em;display: block;">
+                              <small class="card-description text-muted">JITHIN BABU</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >ENTREPRENEURSHIP <br>TRAINING
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="AEM_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="AEM_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/6"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close AEM_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+
+               <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="INFINITY" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/INFINITY.png" alt="Infinity" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >#INFINITY<br>
+                              <br>
+                              <small class="card-description text-muted">HANZAL SALIM</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >SOFTWARE
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="INFINITY_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="INFINITY_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/5"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close INFINITY_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+
+               <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="crow" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/PAPER CROW.png" alt="Paper crow" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >PAPER CROW<br>
+                              <br>
+                              <small class="card-description text-muted">HANZAL SALIM</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >CRAFT
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="crow_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="crow_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/4"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close crow_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+
+               <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="AVANTOURA" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/AVANTOURA.png" alt="Avantoura" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >AVANTOURA<br>
+                              <br>
+                              <small class="card-description text-muted">SHIYAS V P</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >TOURISM
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="AVANTOURA_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="AVANTOURA_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/3"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close AVANTOURA_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+
+               <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="box" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/MATCH BOX MEDIA.png" alt="Match box" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" >MATCH BOX <br>MEDIA<br>
+                              <small class="card-description text-muted">ANIRUDH</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >MEDIA
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="box_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="box_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/2"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close box_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+
+               <!-- card start -->
+               <div class="col-md-3 slideanim">
+                  <button id="BODHWITECH" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
+                     <div class="team-player">
+                        <div class="card card-plain" style="border: 0">
+                           <div class="col-md-8 ml-auto mr-auto">
+                              <img src="/assets/images/startups/BODHWI TECHNOLOGIES.png" alt="Bodhwi tech" class="img-raised rounded-circle img-fluid">
+                           </div>
+                           <h4 class="card-title" style="content: '';margin-left: -0.3em!important;margin-right:-0.3em;">BODHWI<br> TECHNOLOGIES<br>
+                              <small class="card-description text-muted">HANZAL SALIM</small>
+                           </h4>
+                           <div class="card-body">
+                              <p class="card-description" >SOFTWARE
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+               </button>
+                <div id="BODHWITECH_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="BODHWITECH_modal_body" class="modal-body">
+                        <iframe width="70%" height="450px" src="startup/1"style="position: fixed;top: 20%;left: 20%"></iframe>
+                        <span class="close BODHWITECH_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                     </div>
+                  </div>
+               </div>
+               <!-- card end -->
+         </div>
+      </div>
+	  </div>
+     <!-- scripts -->
+  <!-- All Javascript plugins goes here -->
+  <script src="/assets/js/vendor/jquery-1.12.4.min.js"></script> 
+
+  <!-- All vendor scripts -->
+
+  <script src="/assets/js/vendor/all.js"></script>
+
+  <!-- Javascript main files -->
+  <script src="/assets/js/main.js"></script>
+
+
+      <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
+      <script src="/assets/js/popper.min.js" type="text/javascript"></script>
+      <script src="/assets/js/bootstrap-material-design.min.js" type="text/javascript"></script>
+      <script src="/assets/js/material-kit.js" type="text/javascript"></script>
+      <script type="text/javascript">
+         // Get the modal
+		 var modalbody="";
+		 var modal="";
+		 function modal_create(modal_id)
+		 {
+			console.log(modal_id+'_modal');
+			modal = document.getElementById(modal_id+'_modal');
+			modal.style.display = "block";
+			modalbody = document.getElementById(modal_id+'_modal_body');
+			var span = document.getElementsByClassName(modal_id+"_class")[0];
+			
+			span.onclick = function() {
+             modal.style.display = "none";
+			}
+		 }
+		 
+         // When the user clicks anywhere outside of the modal, close it
+         window.onclick = function(event) {
+		 //console.log("clicked on window");
+		 console.log(event.target);
+		 console.log(modalbody);
+		 
+
+             if (event.target == modal) {
+			 console.log(modal);
+                 modal.style.display = "none";
+				 //modal_alila.style.display = "none";
+				  //console.log("clicked outside modal");
+             }
+         }
+           $(document).ready(function(){
+         
+             $(".navbar a, footer a[href='#myteam']").on('click', function(event) {
+         
+                   if (this.hash !== "") {
+                     event.preventDefault();
+                     var hash = this.hash;
+                     $('html, body').animate({
+                       scrollTop: $(hash).offset().top
+                     }, 900, function(){
+                   window.location.hash = hash;
+                 });
+               }
+             });
+           })
+         
+         $(document).ready(function(){
+           $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+           
+             if (this.hash !== "") {
+              
+               event.preventDefault();
+         
+               
+               var hash = this.hash;
+         
+             
+               $('html, body').animate({
+                 scrollTop: $(hash).offset().top
+               }, 900, function(){
+            
+            
+                 window.location.hash = hash;
+               });
+             } 
+           });
+           
+           $(window).scroll(function() {
+             $(".slideanim").each(function(){
+               var pos = $(this).offset().top;
+         
+               var winTop = $(window).scrollTop();
+                 if (pos < winTop + 600) {
+                   $(this).addClass("slide");
+                 }
+             });
+           });
+         })
+         function reg() {
+             alert();
+         }
+           
+      </script>
+   </body>
+</html>
+<!-- To create a modal 
+
+<div id="alila_modal" class="modal" >
+                  <div class="modal-content">
+                     <div id="alila_modal_body" class="modal-body">
+                        <span class="close alila_class" style="position: fixed;top: 21%; right: 16%;">&times;</span>
+                        <iframe width="70%" height="450px" src="startups/ALILA CREATIONS.html"style="position: fixed;top: 20%;left: 20%"></iframe>
+                     </div>
+                  </div>
+               </div>
+
+			   1.Paste the above snippet under </button> tag
+			   2.change button tag as <button id="alila" class="btn btn-outline-white box foo" onclick="modal_create(this.id)"> and change the "alila " in id="alila" in the button tag to 
+					something unique
+			   3.replace alila in the above snippet with the unique_id you have just provided in the button tag.
+			   4.Done!
+			   
+			   -->
