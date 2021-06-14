@@ -40,6 +40,10 @@ router.get('/team', function(req, res, next) {
 router.use('/idcard', require('./idcard'));
 router.use('/activities', require('./activities'));
 router.use('/register', require('./register'));
+router.use('/workshopregister', function(req,res){
+  res.render('pages/workshopregister/workshop')
+}
+);
 router.use('/dashboard', loggedin , require('./dashboard'));
 router.use('/startup', require('./startups'));
 router.get('/12345678/pagedit/signup', function(req, res, next) {
