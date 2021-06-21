@@ -104,8 +104,27 @@
           <input type="text" class="form-control"  id="Department" name="department">
         </div>
           <div class="row">
-          <label>Semester</label>
-          <input type="text" class="form-control" required="required" id="Semester" name="semester">
+          <label>Year Of Studying</label>
+ {{!-- <input type="number" class="form-control" required="required" id="Semester" name="semester"> --}}
+          <select type="text" class="form-control" required="required" name="year">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+        </div>
+         <div class="row">
+          <label>Reason why they want to attend Work Shop</label>
+          <input type="text" class="form-control" required="required" id="Semester" name="reason" style="height: 100px;">
+        </div>
+         <div class="row">
+          <label>What are the topics which they like to know more about</label>
+          <input type="text" class="form-control" required="required" id="Semester" name="intrested topic" style="height: 100px;">
+        </div>
+         <div class="row">
+          <label>If they have any experience in PCB design or 3D design</label>
+          <input type="text" class="form-control" required="required" id="Semester" style="height: 100px;" name="experiance">
+          
         </div>
 
           <div class="row2">
@@ -119,7 +138,8 @@
         $("#submit-form").submit((e)=>{
       e.preventDefault()
       $.ajax({
-          url:"https://script.google.com/macros/s/AKfycbziwewB4fZjLeOZO0AgVJKTqIQOFEPYCHO3L6AJNGLOazAM3Eb6ilrmkpcGIfRb15mURg/exec",
+        {{!-- https://script.google.com/macros/s/AKfycbziwewB4fZjLeOZO0AgVJKTqIQOFEPYCHO3L6AJNGLOazAM3Eb6ilrmkpcGIfRb15mURg/exec --}}
+          url:"https://script.google.com/macros/s/AKfycbyUesMtdv-9kFLdNPstR2-8_clGKgoNriVpAIeOI-X8Li8A9591OAHB2keEyoNat6Ibew/exec",
 
           data:$("#submit-form").serialize(),
           method:"post",
