@@ -16,7 +16,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Deploy NodeJS app
-        uses: appleboy/ssh-actions@v0.1.2
+        uses: appleboy/ssh-action@v0.1.2
         with:
           host: ${{secrets.SSH_HOST}} #ip address
           key: ${{secrets.SSH_KEY}} #private/publickey
