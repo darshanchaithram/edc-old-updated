@@ -23,6 +23,8 @@ jobs:
           username: ${{secrets.SSH_USERNAME}} #useer of the server
         
           script: |
+            mkdir deploy
+            cd deploy
             git clone git@github.com:iEDC-NSSCE/edcwebsite.git
             echo 'deployment successfull to digital ocean'
         
