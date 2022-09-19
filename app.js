@@ -12,22 +12,27 @@ const mongoose = require('mongoose');
 const session = require('express-session');
 const flash = require('connect-flash');
 const passport = require('passport');
-
+  
 require('./passport')(passport);
 
+mongoose.connect('mongodb+srv://admin:edcnssce@admin@edcnssce.6skz7vn.mongodb.net', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false
+});
 // mongoose.connect('mongodb+srv://edcnssce:Entrepreneurship@NSSCE@edcnssce-kaboq.mongodb.net/dbedc', {
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true,
 //   useFindAndModify: false
 // });
-mongoose.connect('mongodb://localhost:27017/dbedc', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useFindAndModify: false
-});
+// mongoose.connect('mongodb://localhost:27017/dbedc', {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+//   useFindAndModify: false
+// });
 
 
-const indexRouter = require('./routes/index');
+  const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const auth = require('./routes/auth/auth')(passport);
 
