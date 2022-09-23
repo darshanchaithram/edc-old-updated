@@ -224,7 +224,7 @@
                   <div class="img-avatar-alpha">
                     <div class="img-1 shadow">
                     <a href="#">
-                        <img class="img" src="/assets/images/team/2022-23/Rohini.jpg"" alt="Image">
+                        <img class="img" src="/assets/images/team/2022-23/Rohini.jpg" alt="Image">
                       </a>
                     </div>
                     <div class="legend text-center pos-abs">
@@ -542,7 +542,7 @@
                   </div>
                   <div class="legend text-center pos-abs">
                     <h5>Arun K</h5>
-                    <p class="small">Project Head</p>
+                    <p class="small">IoT Head</p>
                   </div>
                 </div>
               </div>
@@ -790,10 +790,7 @@
        {{#each items}}
             <div class='timeline'>
             <div class='timeline-content'>
-                <span class='date'>
-                    <span class='day' id="day{{this._id}}"></span>
-                    <span class='month' id="month{{this._id}}"></span>
-                    <span class='year' id="year{{this._id}}"></span>
+                <span class='date'id="day{{edc._id}}">
                 </span>
                 <h2 class='title'>{{this.title}}</h2>
                 <p class='description' id="det{{this._id}}">{{this.detail}}</p>
@@ -817,13 +814,91 @@
         <footer class="section-footer scrolldown">
           <a class="down">
             <span class="icon"></span>
-            <span class="txt">Register</span>
+            <span class="txt">Tinkerhub</span>
           </a>
         </footer>
       </div>
       <!-- End of section wrapper -->
     </div>
     <!-- End of activity section -->
+
+    <!-- Begin of tinkerhub  section -->
+ <div class="section section-list-feature  project-slider fp-auto-height-responsive" data-section="tinkerhub">
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper twoside anim">
+        <!-- title -->
+        <div class="section-title text-center">
+          <h2 class="display-4 display-title title-bg">Tinkerhub</h2>
+       </div>
+
+      
+    <!-- Timeline of Last 5-6 Events displayed here Rest in activities/ -->
+     {{!-- <div class="main-timeline">
+       {{#each items}}
+            <div class='timeline'>
+            <div class='timeline-content'>
+                <span class='date'id="day{{this._id}}">
+                </span>
+                <h2 class='title'>{{this.title}}</h2>
+                <p class='description' id="det{{this._id}}">{{this.detail}}</p>
+            </div>
+            
+            {{> dateformatscript }} <!-- This Partial is for formating date, Partial is found at /partials/dateformatscript-->
+
+
+            </div>
+        {{/each}}
+           
+        
+  </div> --}}
+
+<div class="team">
+
+            <!--Row start-->
+            <div class="row" >
+
+                <!--Code for 1 card-->
+                <div class="col-md-3 slideanim">
+                        <div class="team-player" >
+                           <div class="card card-plain" style="border: 0">
+                              <h4 class="card-title">DAY ONE
+                                 <br>
+                                 <small class="card-description text-muted">Date</small>
+                              </h4>
+                              <div class="card-body">
+                                 <p class="card-description" >Desc
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                  </div>
+                  </button>
+                  <!--Modal start-->
+                   <div id="33_modal" class="modal">
+                  
+                  </div>
+                  <!--End of modal-->
+                  <!--End of One card-->
+            </div>
+            </div>
+
+  <div class="row align-items-center justify-content-center" style="margin-top: 50px;margin-bottom: 100px">
+        <a class="btn btn-outline-white btn-round nav-item " href="tinkerhub/">
+          View more
+        </a>
+        </div>
+</div>
+ 
+        <footer class="section-footer scrolldown">
+          <a class="down">
+            <span class="icon"></span>
+            <span class="txt">Register</span>
+          </a>
+        </footer>
+      </div>
+      <!-- End of section wrapper -->
+    </div>
+    <!-- End of Tinker section -->
 
     <!-- Begin of pricelist section -->
     <div class="section section-pricelist " data-section="register">
